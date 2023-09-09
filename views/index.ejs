@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiggleHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>GiggleHub</h1>
+    <h2>Refresh for a new laugh!</h2>
+    <div>
+        <p>
+            <%= content.setup %>
+        </p>
+        <p>
+            <%= content.delivery %>
+        </p>
+    </div>
+    <button id="refreshBtn">OMG, Hit me again!</button>
+    <footer>
+        Made with ♥ by Hands Of Apurv
+    </footer>
+    <script>
+        document.getElementById('refreshBtn').addEventListener('click', function() {
+            location.reload();
+        });
+    </script>
+</body>
+
+</html>
